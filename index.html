@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+    <meta charset="UTF-8" />
+    <meta http-eqiov="X-UA-Compatible" content="IT=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="src/styles.css" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+	<div class="container">
+		<div class="weather-app"> 
+			<form class="search-form" id="search-form">
+				<div class="row">
+					 <div class="col-6">
+						 <input
+							 type="search"
+							 id="location-input"
+							 placeholder="Enter a city"
+							 autocomplete="off"
+							 autofocus="on"
+							 class="form-control shadow-sm"
+							/>
+					 </div>
+				<div class="col-3">
+					 <input
+					type="submit"
+					class="form-control btn btn-primary shadow-sm w-100"
+					id="searchButton"
+					value="Search"
+				/>
+				</div>
+				<div class="col-3">
+				<button 
+				id="currentLocation" 
+				class="btn btn-primary w-100"
+				>
+				Current 📍
+			</button>
+				</div>
+				</div>
+			</form>
+		
+			<h1 id="city"></h1>
+					<ul>
+						<li id="date">Wednesday, 00:14</li>
+						<li id="weatherDescription"></li>
+					</ul>
+				 
+		<br />
+					<div class="row">
+						<div class="col-6">
+							<div class="clearfix">
+							<div class="float-left">
+					<span class="temperature" id="temperature"></span>
+					<span class="units"><a href="#" id="fahrenheit-link">ºF|<a href="#" id="celsius-link">ºC</a></span>
+					</div>
+					</div>
+</div>
+				<div class="col-6">
+					<ul>
+						<li>Humidity: <span id="humidity"></span>%</li>
+						<li>Wind: <span id="wind"> </span>mph</li>
+					</ul>
+				</div>
+			</div>
+<br />
+<div id="contact">
+<a href="https://github.com/Anesiwa/Weather-app">Open-source code </a> <span> by Amelia Arku</span></div>
+</div>
+</div>
+<script src="src/index.js"></script>
+</body>  
+</html>

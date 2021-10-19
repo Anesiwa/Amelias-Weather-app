@@ -1,0 +1,86 @@
+body {
+  margin: 0 auto;
+  padding: 15px 0;
+}
+h1 {
+  margin: 10px 0 0 0;
+}
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.weather-app {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  font-family: sans-serif;
+  border: 1px solid #3a3a3c;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 540px;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+  margin: 5px 0;
+}
+
+#city {
+  font-size: 40px;
+  color: #555555;
+}
+#date {
+  font-size: 25px;
+  color: #555555;
+}
+.temperatureDetails {
+  color: #141518;
+}
+
+#temperature {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+.units {
+  position: relative;
+  top: -34px;
+  font-size: 18px;
+  color: #3a3a3c;
+}
+#searchButton {
+  color: darkblue;
+  border-color: #3a3a3c;
+}
+#searchButton.hover {
+  cursor: pointer;
+}
+#currentLocation {
+  color: darkred;
+  border-color: #3a3a3c;
+}
+#currentLocation.hover {
+  cursor: pointer;
+}
+
+#contact {
+  color: #141518;
+  font-size: 14px;
+  position: relative;
+  float: right;
+  margin-bottom: 10px;
+}
+.col-6 {
+  position: relative;
+  max-width: 60%;
+  flex: 0 0 50%;
+  width: 100%;
+}
+.col-3 {
+  position: relative;
+  width: 100%;
+}
