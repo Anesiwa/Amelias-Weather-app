@@ -28,7 +28,7 @@
 				<div class="col-3">
 					 <input
 					type="submit"
-					class="form-control btn btn-primary shadow-sm w-100"
+					class="form-control btn btn-primary w-100"
 					id="searchButton"
 					value="Search"
 				/>
@@ -43,24 +43,22 @@
 				</div>
 				</div>
 			</form>
-		
+		<div class="row">
+      <div class="col-6">
 			<h1 id="city"></h1>
 					<ul>
 						<li id="date">Wednesday, 00:14</li>
-						<li id="weatherDescription"></li>
-					</ul>
-				 
-		<br />
-					<div class="row">
+            <li id="weatherDescription"></li>
+          </ul>
+				 </div>
 						<div class="col-6">
 							<div class="clearfix">
-							<div class="float-left">
+							<div class="float-right">
 					<span class="temperature" id="temperature"></span>
 					<span class="units"><a href="#" id="fahrenheit-link">ºF|<a href="#" id="celsius-link">ºC</a></span>
-					</div>
+       					</div>
 					</div>
 </div>
-				<div class="col-6">
 					<ul>
 						<li>Humidity: <span id="humidity"></span>%</li>
 						<li>Wind: <span id="wind"> </span>mph</li>
@@ -68,8 +66,10 @@
 				</div>
 			</div>
 <br />
-<div id="contact">
-<a href="https://github.com/Anesiwa/Weather-app">Open-source code </a> <span> by Amelia Arku</span></div>
+<small id="contact">
+<a href="https://github.com/Anesiwa/Weather-app" target="_blank">Open-source code
+</a>
+<span> by Amelia Arku</span></small>
 </div>
 </div>
 <script src="src/index.js"></script>
