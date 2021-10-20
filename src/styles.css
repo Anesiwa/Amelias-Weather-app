@@ -27,7 +27,6 @@ ul {
 .row {
   display: flex;
   margin: 5px 0;
-  flex-wrap: wrap;
 }
 
 #city {
