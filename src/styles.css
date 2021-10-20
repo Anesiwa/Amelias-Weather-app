@@ -27,6 +27,7 @@ ul {
 .row {
   display: flex;
   margin: 5px 0;
+  flex-wrap: wrap;
 }
 
 #city {
@@ -83,4 +84,10 @@ ul {
 .col-3 {
   position: relative;
   width: 100%;
+}
+.weatherForecast {
+  text-align: center;
+  margin: 40px 0;
+  border-bottom: 1px solid #141518;
+  padding-bottom: 50px;
 }
