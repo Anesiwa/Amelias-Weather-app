@@ -30,7 +30,10 @@ ul {
   border-bottom: 1px solid #ace0f9;
   padding-bottom: 20px;
 }
-
+.dailyForecast row {
+  display: block;
+  margin: 0 auto;
+}
 .row {
   display: flex;
   margin: 5px 0;
