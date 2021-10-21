@@ -30,6 +30,9 @@ ul {
   border-bottom: 1px solid #ace0f9;
   padding-bottom: 40px;
 }
+.row {
+  display: flex;
+}
 
 #city {
   font-size: 40px;
