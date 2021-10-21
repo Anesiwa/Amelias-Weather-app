@@ -25,14 +25,16 @@ ul {
   margin: 20px auto;
 }
 .weatherForecast {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.dailyForecast row {
   text-align: center;
   margin: 40px 0;
   border-bottom: 1px solid #ace0f9;
   padding-bottom: 20px;
-}
-.dailyForecast row {
-  display: block;
-  margin: 0 auto;
 }
 .row {
   display: flex;
@@ -56,6 +58,7 @@ ul {
   font-weight: 400;
   line-height: 1;
   color: #2a2a3b;
+  margin-left: 10px;
 }
 .units {
   position: relative;
