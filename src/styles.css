@@ -111,6 +111,10 @@ ul {
   font-weight: 700;
 }
 .forecast-temperature-min {
-  margin-left" 10px;
-  opacity: .6;;
+  margin-left: 10px;
+  opacity: 0.6;
+}
+.forecastPreview dailyIcon {
+  display: block;
+  margin: 20px auto;
 }
