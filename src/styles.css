@@ -59,7 +59,7 @@ ul {
 #temperature {
   font-size: 64px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 2;
   color: #2a2a3b;
   margin-left: 10px;
 }
@@ -70,8 +70,6 @@ ul {
 }
 .weather-temperature img {
   margin-right: 10px;
-  height: 64px;
-  width: 64px;
 }
 #searchButton {
   border-color: #808285;
@@ -118,8 +116,8 @@ li #humidity {
   color: #808285;
 }
 .dailyIcon {
-  width: 64px;
-  height: 64px;
+  width: 38px;
+  height: 38px;
 }
 .forecast-temperature {
   font-size: 18px;
