@@ -12,7 +12,8 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 	<div class="container">
-		<div class="weather-app"> 
+		<div class="weather-app-wrapper">
+      <div class="weather-app"> 
 			<form class="search-form" id="search-form">
 				<div class="row">
 					 <div class="col-6">
@@ -36,7 +37,7 @@
 				<div class="col-3">
 				<button 
 				id="currentLocation" 
-				class="btn btn-primary w-100"
+				class= "btn-primary w-100"
 				>
 				Current 📍
 			</button>
@@ -49,7 +50,7 @@
            <div class="col-6">
 		        	<h1 id="city"></h1>
 					     <ul>
-					     	<li>Last udpated: <span id="date">Wednesday, 00:14</span></li>
+					     	<li>Last updated: <span id="date"></span>","<span id="weatherDescription"></span></li>
                 <li>Humidity: <span id="humidity"></span>%</li>
 						    <li>Wind: <span id="wind"> </span> mph</li>
               </ul>
@@ -58,11 +59,12 @@
 						<div class="clearfix weather-temperature">
               <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
                    alt="sunny"
+                   id="icon"
                    class="float-left"
+                   width="52"
+                   height="52"
               />
-               <div id="weatherDescription"></div>
-
-                <div class="temperature" id="temperature"></span><span class="units"><a href="#" id="fahrenheit-link">ºF</a> | <a href="#" id="celsius-link">ºC</a></span>
+            <div><strong class="temperature" id="temperature"></strong><span class="units"><a href="#" id="fahrenheit-link">ºF</a> | <a href="#" id="celsius-link">ºC</a></span></span>
               </div>
           
        					</div>
@@ -133,7 +135,7 @@
   <small> This project was coded by Amelia Arku and is</small>
 <a href="https://github.com/Anesiwa/Weather-app" target="_blank"> open-sourced on GitHub</a>
 </div>
-
+</div>
 </div>
 	</div>
 <script src="src/index.js"></script>

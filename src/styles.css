@@ -4,6 +4,9 @@ body {
 }
 h1 {
   margin: 10px 0 0 0;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
 }
 li {
   list-style: none;
@@ -16,14 +19,16 @@ ul {
   padding: 0;
   margin: 0 auto;
 }
-
+.weather-app-wrapper {
+  max-width: 540px;
+  margin: 20px auto;
+}
 .weather-app {
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  font-family: sans-serif;
   border: 1px solid #808285;
   border-radius: 10px;
-  padding: 10px;
-  max-width: 540px;
+  padding: 20px;
+
   margin: 20px auto;
 }
 .dailyForecast {
@@ -36,8 +41,8 @@ ul {
   display: flex;
 }
 .dailyForecast row {
-  display: block;
   width: 100%;
+  text-align: center;
 }
 #city {
   font-size: 40px;
@@ -129,4 +134,7 @@ li #humidity {
 .forecastPreview dailyIcon {
   display: block;
   margin: 20px auto;
+}
+.weather-detail {
+  margin-bottom: 20px;
 }
