@@ -16,7 +16,7 @@ li:first-letter {
   text-transform: capitalize;
 }
 ul {
-  padding: 0;
+  padding: 5px;
   margin: 0 auto;
 }
 .weather-app-wrapper {
@@ -35,6 +35,9 @@ ul {
   margin: 40px 0;
   border-bottom: 1px solid #ace0f9;
   padding-bottom: 20px;
+}
+.weather-temperature {
+  display: block;
 }
 .row {
   display: flex;
