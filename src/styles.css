@@ -28,7 +28,6 @@ ul {
   border: 1px solid #808285;
   border-radius: 10px;
   padding: 20px;
-
   margin: 20px auto;
 }
 .dailyForecast {
@@ -41,8 +40,7 @@ ul {
   display: flex;
 }
 .dailyForecast row {
-  width: 100%;
-  text-align: center;
+  justify-content: space-around;
 }
 #city {
   font-size: 40px;
@@ -71,8 +69,8 @@ ul {
 }
 .weather-temperature img {
   margin-right: 10px;
-  height: 64px;
-  width: 64px;
+  height: 80px;
+  width: 80px;
 }
 #searchButton {
   border-color: #808285;
@@ -101,9 +99,14 @@ li #humidity {
 .weatherDescription {
   text-align: center;
   margin: 0 auto;
+  justify-content: center;
   font-size: smaller;
   color: #808285;
 }
+.weatherDescriptions:first-letter {
+  text-transform: capitalize;
+}
+
 .forecast-day {
   font-size: 16px;
   line-height: 20px;
