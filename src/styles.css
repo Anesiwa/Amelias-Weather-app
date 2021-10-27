@@ -34,13 +34,11 @@ ul {
   text-align: center;
   margin: 40px 0;
   border-bottom: 1px solid #ace0f9;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .row {
   display: flex;
-}
-.dailyForecast row {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 #city {
   font-size: 40px;
