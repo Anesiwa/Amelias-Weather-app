@@ -59,9 +59,10 @@ ul {
 #temperature {
   font-size: 64px;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1;
   color: #2a2a3b;
   margin-left: 10px;
+  display: inline-flex;
 }
 .units {
   position: relative;
@@ -70,6 +71,8 @@ ul {
 }
 .weather-temperature img {
   margin-right: 10px;
+  height: 64px;
+  width: 64px;
 }
 #searchButton {
   border-color: #808285;
