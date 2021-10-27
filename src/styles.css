@@ -94,14 +94,6 @@ ul {
 li #humidity {
   margin-top: 10px;
 }
-.col {
-  max-width: 100%;
-  flex-grow: 1;
-}
-.col-6 {
-  max-width: 60%;
-  flex: 0 0 50%;
-}
 
 .weatherDescription {
   text-align: center;
