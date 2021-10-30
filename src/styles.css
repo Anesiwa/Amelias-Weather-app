@@ -99,7 +99,7 @@ li:first-letter {
   margin-bottom: 10px;
 }
 
-.forecast-day {
+.forecast-date {
   font-size: 22px;
   line-height: 1;
   text-align: center;
@@ -117,7 +117,7 @@ li:first-letter {
 }
 .forecast-temperature-min {
   margin-left: 10px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .forecastPreview dailyIcon {
   display: block;
