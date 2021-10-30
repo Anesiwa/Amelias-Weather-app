@@ -22,6 +22,31 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#dailyForecast");
+
+  let forecastHTML = `<div class="row">`;
+
+  forecastHTML =
+    forecastHTML +
+    `  
+      <div class="col-2">
+        <div class="forecast-date">Fri</div>
+         <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
+                   alt=""
+                   width="42"
+              />
+        <div class ="forecast-temperature">
+        <span class="forecast-temperature-max">82º</span>
+        <span class="forecast-temperature-min">78º</span>
+      </div>
+      </div>
+      `;
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement = innerHTML = forecastHTML;
+}
+
 function displayWeatherCondition(response) {
   let iconElement = document.querySelector("#icon");
 
@@ -102,3 +127,4 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 searchCity("New York");
+displayForecast();
