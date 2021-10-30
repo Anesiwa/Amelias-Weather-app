@@ -6,20 +6,23 @@ h1 {
   margin-top: 10px;
   font-size: 24px;
   font-weight: 100;
-  line-height: 28px;
-}
-li {
-  list-style: none;
-  margin: 0 auto;
-  font-size: smaller;
-}
-li:first-letter {
-  text-transform: capitalize;
+  line-height: 1;
+  color: #2a2a3b;
 }
 ul {
   padding: 5px;
   margin: 10px 0;
 }
+li {
+  list-style: none;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #808285;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+
 .weather-app-wrapper {
   max-width: 540px;
   margin: 20px auto;
@@ -32,19 +35,13 @@ ul {
   margin: 20px auto;
 }
 .search-form {
-  margin-bottom: 5px;
-}
-.weatherDescription {
-  color: #808285;
+  margin-bottom: 10px;
 }
 .dailyForecast {
   text-align: center;
   margin: 40px 0;
   border-bottom: 1px solid #ace0f9;
   padding-bottom: 20px;
-}
-.weather-temperature {
-  display: block;
 }
 .weather-detail {
   margin-bottom: 20px;
@@ -53,14 +50,7 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-#city {
-  font-size: 40px;
-  color: #2a2a3b;
-}
-#date {
-  font-size: 20px;
-  color: #808285;
-}
+
 .temperatureDetails {
   color: #808285;
 }
@@ -100,9 +90,6 @@ ul {
   position: relative;
   text-align: center;
   margin-bottom: 10px;
-}
-li #humidity {
-  margin-top: 10px;
 }
 
 .forecast-day {
