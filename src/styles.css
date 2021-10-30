@@ -3,7 +3,7 @@ body {
   padding: 15px 0;
 }
 h1 {
-  margin: 10px 0 0 0;
+  margin-top: 10px;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -11,13 +11,14 @@ h1 {
 li {
   list-style: none;
   margin: 0 auto;
+  font-size: smaller;
 }
 li:first-letter {
   text-transform: capitalize;
 }
 ul {
   padding: 5px;
-  margin: 0 auto;
+  margin: 10px 0;
 }
 .weather-app-wrapper {
   max-width: 540px;
@@ -29,6 +30,12 @@ ul {
   border-radius: 10px;
   padding: 20px;
   margin: 20px auto;
+}
+.search-form {
+  margin-bottom: 5px;
+}
+.weatherDescription {
+  color: #808285;
 }
 .dailyForecast {
   text-align: center;
@@ -96,17 +103,6 @@ ul {
 }
 li #humidity {
   margin-top: 10px;
-}
-
-.weatherDescription {
-  text-align: center;
-  margin: 0 auto;
-  justify-content: center;
-  font-size: smaller;
-  color: #808285;
-}
-.weatherDescriptions:first-letter {
-  text-transform: capitalize;
 }
 
 .forecast-day {
