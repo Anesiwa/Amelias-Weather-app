@@ -39,6 +39,9 @@ ul {
 .weather-temperature {
   display: block;
 }
+.weather-detail {
+  margin-bottom: 20px;
+}
 .row {
   display: flex;
   justify-content: space-between;
@@ -70,8 +73,6 @@ ul {
 }
 .weather-temperature img {
   margin-right: 10px;
-  height: 80px;
-  width: 80px;
 }
 #searchButton {
   border-color: #808285;
@@ -131,7 +132,4 @@ li #humidity {
 .forecastPreview dailyIcon {
   display: block;
   margin: 20px auto;
-}
-.weather-detail {
-  margin-bottom: 20px;
 }
