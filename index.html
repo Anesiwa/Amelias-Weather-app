@@ -48,26 +48,28 @@
       <div class="weather-detail">
 		    <div class="row">
            <div class="col-6">
+             <div>
 		        	<h1 id="city"></h1>
 					     <ul>
-                 <li id="weatherDescription"></li>
 					     	<li>Last updated: <span id="date"></span></li>
+                <li id="weatherDescription"></li>
                 <li>Humidity: <span id="humidity"></span>%</li>
 						    <li>Wind: <span id="wind"> </span> mph</li>
               </ul>
 				  </div>
+          </div>
         	<div class="col-6">
-            <div class="temperature-container d-flex-block">
-						<div class="clearfix weather-temperature">
+            <div class="clearfix temperature-container">
+						<div class="weather-temperature d-flex-inline">
               <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
                    alt="sunny"
                    id="icon"
                    class="float-left"
-                   width="80"
-                   height="80"
+                   width="100"
+                   height="100"
               />
               
-              <span><strong class="temperature" id="temperature"></strong><span class="units"><a href="#" id="fahrenheit-link">ºF</a> | <a href="#" id="celsius-link">ºC</a></span></span>
+              <span class="temperature" id="temperature"></span><span class="units"><a href="#" id="fahrenheit-link" class="active">ºF</a> | <a href="#" id="celsius-link">ºC</a></span>
                 	</div>
 				    </div>
             </div>
