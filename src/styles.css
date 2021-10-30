@@ -116,7 +116,7 @@ li:first-letter {
   font-weight: 700;
 }
 .forecast-temperature-min {
-  margin-left: 10px;
+  margin-left: 5px;
   opacity: 0.5;
 }
 .forecastPreview dailyIcon {

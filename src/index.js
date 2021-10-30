@@ -24,27 +24,31 @@ function formatDate(date) {
 
 function displayForecast() {
   let forecastElement = document.querySelector("#dailyForecast");
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
 
   let forecastHTML = `<div class="row">`;
-
-  forecastHTML =
-    forecastHTML +
-    `  
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
       <div class="col-2">
-        <div class="forecast-date">Fri</div>
-         <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
-                   alt=""
-                   width="42"
-              />
-        <div class ="forecast-temperature">
-        <span class="forecast-temperature-max">82º</span>
-        <span class="forecast-temperature-min">78º</span>
+        <div class="forecast-date">${day}</div>
+        <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="44"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="forecast-temperature-max"> 82° </span>
+          <span class="forecast-temperature-min"> 76° </span>
+        </div>
       </div>
-      </div>
-      `;
+  `;
+  });
 
   forecastHTML = forecastHTML + `</div>`;
-  forecastElement = innerHTML = forecastHTML;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
 }
 
 function displayWeatherCondition(response) {
