@@ -1,4 +1,5 @@
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -7,7 +8,7 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  let dayIndex = date.getDay();
+
   let days = [
     "Sunday",
     "Monday",
@@ -17,34 +18,55 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
+  let dayIndex = date.getDay();
   let day = days[dayIndex];
 
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast(response) {
-  console.log(response);
-  let forecastElement = document.querySelector("#dailyForecast");
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
+  return days[day];
+}
+
+function displayForecast(response) {
+  let forecast = response.data.daily;
+  console.log(forecast);
+  let forecastElement = document.querySelector("#dailyForecast");
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        `
       <div class="col-2">
-        <div class="forecast-date">${day}</div>
+        <div class="forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
-          src="http://openweathermap.org/img/wn/50d@2x.png"
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }.png"
           alt=""
-          width="80"
+          width="70"
         />
-        <div class="weather-forecast-temperatures">
-          <span class="forecast-temperature-max"> 82° </span>
-          <span class="forecast-temperature-min"> 76° </span>
+         <div class="forecast-weather-description"> ${
+           forecastDay.weather[0].description
+         }</div>
+
+         <div class="weather-forecast-temperatures">
+        <span class="forecast-temperature-max"> ${Math.round(
+          forecastDay.temp.max
+        )}°</span>
+          <span class="forecast-temperature-min"> ${Math.round(
+            forecastDay.temp.min
+          )}° </span> 
+         
         </div>
       </div>
   `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
@@ -140,4 +162,3 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 searchCity("New York");
-displayForecast();

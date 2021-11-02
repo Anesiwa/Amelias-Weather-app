@@ -22,16 +22,15 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-.weather-app-wrapper {
-  max-width: 540px;
-  margin: 40px auto;
-}
 .weather-app {
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  border: 1px solid #808285;
-  border-radius: 10px;
+  max-width: 540px;
+  border-color: #d5d8e3;
+  box-shadow: 1px 5px 30px #33b7b9;
+  opacity: 80%;
+  border: 10px;
+  border-radius: 40px 40px 40px 40px;
   padding: 20px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .search-form {
   margin-bottom: 10px;
@@ -39,7 +38,7 @@ li:first-letter {
 .dailyForecast {
   text-align: center;
   margin: 40px 0;
-  border-bottom: 1px solid #ace0f9;
+  border-bottom: 1px solid lightseagreen;
   padding-bottom: 20px;
 }
 .weather-detail {
@@ -51,8 +50,9 @@ li:first-letter {
 }
 
 .temperatureDetails {
-  color: #808285;
+  color: #6d6d6e;
 }
+
 #temperature {
   font-size: 80px;
   line-height: 1;
@@ -122,4 +122,10 @@ li:first-letter {
 .forecastPreview dailyIcon {
   display: block;
   margin: 20px auto;
+}
+.forecast-weather-description {
+  text-align: center;
+}
+.forecast-weather-description:first-letter {
+  text-transform: capitalize;
 }
