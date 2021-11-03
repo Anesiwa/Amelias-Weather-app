@@ -42,7 +42,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="col-2">
+      <div class="col-2 id="forecast-columns">
         <div class="forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
           src="http://openweathermap.org/img/wn/${
@@ -51,11 +51,10 @@ function displayForecast(response) {
           alt=""
           width="70"
         />
-         <div class="forecast-weather-description"> ${
+         <div class="forecast-weather-description">${
            forecastDay.weather[0].description
          }</div>
-
-         <div class="weather-forecast-temperatures">
+        <div class="weather-forecast-temperatures">
         <span class="forecast-temperature-max"> ${Math.round(
           forecastDay.temp.max
         )}°</span>
@@ -100,8 +99,6 @@ function displayWeatherCondition(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  fahrenheitTemperature = response.data.main.temp;
-
   getForecast(response.data.coord);
 }
 
@@ -127,7 +124,6 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
 }
-
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
