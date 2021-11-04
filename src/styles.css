@@ -16,8 +16,10 @@ li {
   list-style: none;
   margin: 0 auto;
   font-size: 18px;
+  font-weight: 600;
   color: #408ec6;
 }
+
 li:first-letter {
   text-transform: capitalize;
 }
@@ -39,56 +41,59 @@ li:first-letter {
 .search-form {
   margin-bottom: 10px;
 }
+#location-input,
+#searchButton,
+#currentLocation {
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 2px;
+  border-color: #408ec6;
+}
 #dailyForecast {
   text-align: center;
   margin: 40px 0;
-  border-bottom: 2px solid #408ec6;
+  border-bottom: 1px solid #408ec6;
   padding-bottom: 20px;
 }
-.weather-detail {
+.weather-detail-container {
   margin-bottom: 20px;
+}
+
+.weather-temperature {
+  position: relative;
+  left: -17px;
 }
 .row {
   display: flex;
   justify-content: space-between;
 }
 
-.temperatureDetails {
-  color: #1e2761;
-}
-
 #temperature {
   font-size: 80px;
   line-height: 1.75;
   color: #408ec6;
-  margin-left: 10px;
+  margin-left: 75px;
 }
 .units {
   position: relative;
-  top: -53px;
-  font-size: 19px;
+  top: -42px;
+  font-size: 17px;
+  color: #f1f1f2;
 }
 #date {
-  color: #408ec6;
+  color: #f1f1f2;
+  font-weight: lighter;
 }
-.weather-temperature img {
-  margin-right: 10px;
-  max-width: 100%;
-  height: auto;
-}
-#searchButton {
-  border-color: #408ec6;
-}
-.searchButton.hover {
-  cursor: pointer;
-}
-#currentLocation {
-  border-color: #408ec6;
-}
-#currentLocation.hover {
-  cursor: pointer;
+#icon-temp-column {
+  position: relative;
+  right: 0px;
 }
 
+.col-3.hover {
+  cursor: pointer;
+}
 #contact {
   color: #f1f1f2;
   font-size: 14px;
@@ -96,7 +101,6 @@ li:first-letter {
   text-align: center;
   margin-bottom: 10px;
 }
-
 .forecast-date {
   font-size: 20px;
   line-height: 1;
@@ -104,20 +108,20 @@ li:first-letter {
   color: #f1f1f2;
 }
 .dailyIcon {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 .weather-forecast-temperatures {
   font-size: 16px;
   line-height: 1.5;
-  color: #408ec6;
+  color: #f1f1f2;
   font-weight: 700;
 }
 .col-2:hover {
   box-shadow: 5px 5px 30px #408ec6;
   border-radius: 15px;
   opacity: 80%;
-  padding: 7px 0;
+  padding: 7px;
 }
 
 .forecast-temperature-min {
@@ -131,7 +135,7 @@ li:first-letter {
 .forecast-weather-description {
   text-align: center;
   color: #408ec6;
-  font-weight: 400;
+  font-weight: 600;
 }
 .forecast-weather-description:first-letter {
   text-transform: capitalize;

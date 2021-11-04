@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=>, initial-scale=1.0" />
     <title>Weather App</title>
     <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
         />
+        
         <link rel="stylesheet" href="src/styles.css" />
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
@@ -15,7 +16,7 @@
 		<div class="weather-app-wrapper">
       <div class="weather-app"> 
 			<form class="search-form" id="search-form">
-				<div class="row">
+				<div class="row" id="search-form-row">
 					 <div class="col-6">
 						 <input
 							 type="search"
@@ -39,7 +40,7 @@
 				id="currentLocation" 
 				class= "btn btn-primary w-100"
 				>
-				📍
+				Current📍
 			</button>
 				</div>
 				</div>
@@ -77,8 +78,8 @@
         <div class="dailyForecast" id="dailyForecast"></div>
 
  <div id="contact">
-  <span> This project was coded by Amelia Arku and is</span>
-<a href="https://github.com/Anesiwa/Weather-app" target="_blank"> open-sourced on GitHub</a>
+  <span> Open-sourced code by Amelia Arku </span>
+<a href="https://github.com/Anesiwa/Weather-app" target="_blank">on GitHub</a>
 </div>
 </div>
 </div>
