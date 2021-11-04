@@ -39,7 +39,9 @@ li:first-letter {
   margin: 0 auto;
 }
 .search-form {
-  margin-bottom: 10px;
+  margin: 10px 0;
+  flex: 0 0 75%;
+  max-width: 75%;
 }
 #location-input,
 #searchButton,
@@ -50,6 +52,12 @@ li:first-letter {
   height: 30px;
   line-height: 2px;
   border-color: #408ec6;
+  padding: 15px 20px;
+}
+#weatherDescription,
+#humidity,
+#wind {
+  color: #f1f1f1;
 }
 #dailyForecast {
   text-align: center;
@@ -91,15 +99,15 @@ li:first-letter {
   right: 0px;
 }
 
-.col-3.hover {
-  cursor: pointer;
-}
 #contact {
   color: #f1f1f2;
   font-size: 14px;
   position: relative;
   text-align: center;
   margin-bottom: 10px;
+}
+a {
+  color: #f1f1f2;
 }
 .forecast-date {
   font-size: 20px;
