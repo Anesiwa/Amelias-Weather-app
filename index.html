@@ -30,7 +30,7 @@
 				<div class="col-2">
 					 <input
 					type="submit"
-					class="form-control btn btn-light w-100"
+					class="form-control btn btn-light"
 					id="searchButton"
 					value="Search🔎"
 				/>
@@ -38,7 +38,7 @@
 				<div class="col-2">
 				<button 
 				id="currentLocation" 
-				class= "btn btn-primary w-100"
+				class= "btn btn-primary"
 				>
 				Current📍
 			</button>
@@ -59,24 +59,27 @@
               </ul>
 				  </div>
           </div>
-        	<div class="col-6">
+        	<div class="col-3">
             <div class="clearfix temperature-container">
-						<div class="weather-temperature d-flex-inline">
+						<div class="weather-temperature">
               <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
                    alt="sunny"
                    id="icon"
-                   class="float-left"
-                />
-              
-              <span class="temperature" id="temperature"></span><span class="units">ºF</span>
-                	</div>
+                   />
+						</div>
+				 </div>
+					</div>
+						<div class="col-3">
+							<span class="temperature" id="temperature"></span><span class="units">ºF</span>
+						</div>
+                
 				    </div>
-            </div>
+           
               </div>
-         </div>
+         
 					
         <div class="dailyForecast" id="dailyForecast"></div>
-
+</div>
  <div id="contact">
   <span> Open-sourced code by Amelia Arku </span>
 <a href="https://github.com/Anesiwa/Weather-app" target="_blank">on GitHub</a>

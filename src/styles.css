@@ -1,3 +1,6 @@
+container {
+  max-width: 80%;
+}
 body {
   margin: 0 auto;
   padding: 15px 0;
@@ -41,7 +44,6 @@ li:first-letter {
 .search-form {
   margin: 10px 0;
   flex: 0 0 75%;
-  max-width: 75%;
 }
 #location-input,
 #searchButton,
@@ -65,24 +67,18 @@ li:first-letter {
   border-bottom: 1px solid #408ec6;
   padding-bottom: 20px;
 }
-.weather-detail-container {
-  margin-bottom: 20px;
-}
 
-.weather-temperature {
-  position: relative;
-  left: -17px;
-}
 .row {
   display: flex;
   justify-content: space-between;
 }
-
+.col-3 {
+  display: block;
+  margin: auto;
+}
 #temperature {
   font-size: 80px;
-  line-height: 1.75;
   color: #408ec6;
-  margin-left: 75px;
 }
 .units {
   position: relative;
